@@ -75,9 +75,10 @@ $eleves = $statement->fetchAll(PDO::FETCH_ASSOC);
                     <td>
                         <a href="update.php?id=<?php echo $eleve['id'] ?>" type="button" class="btn btn-sm btn-outline-primary">Edite</a>
                         <form action="delete.php" method="post" style="display:inline-block">
-                            <input type="hidden" name="id" value="<?php echo $product['id'] ?>">
+                            <input type="hidden" name="id" value="<?php echo $eleve['id'] ?>">
                             <button type="submit" class="btn btn-sm btn-outline-danger">Delete</button>
                         </form>
+
                     </td>
                 </tr>
             <?php endforeach; ?>
