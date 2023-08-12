@@ -1,17 +1,6 @@
 <?php
-        
-        $servername = 'localhost';
-        $database = 'crud_php';
-        $username = 'root';
-        $password = '';
-        
-        //On établit la connexion
-        $conn = new mysqli( $database,$servername, $username, $password);
-        
-        //On vérifie la connexion
-        if($conn->connect_error){
-            die('Erreur : ' .$conn->connect_error);
-        }
-        echo 'Connexion réussie';
-    
+$pdo = new PDO('mysql:host=localhost;port=3306;dbname=crud_php ', 'root', '');
+$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+
 ?>
