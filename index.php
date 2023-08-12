@@ -41,7 +41,7 @@ $eleves = $statement->fetchAll(PDO::FETCH_ASSOC);
     <table class="table">
         <thead>
             <tr>
-                <th scope="col">#</th>
+                <th scope="col">id</th>
                 <th scope="col">Image</th>
                 <th scope="col">Nom</th>
                 <th scope="col">ecole</th>
@@ -58,11 +58,12 @@ $eleves = $statement->fetchAll(PDO::FETCH_ASSOC);
                     </th>
                     <td>
                         image sera ici
-                       <!----- <img style="width: 50px;" src="<?php echo $eleve['image'] ?>"> ----->
+                       <!----- <img style="width: 50px;" src="<?php echo $image['image'] ?>"> ----->
                     </td>
                     <td>
                         <?php echo $eleve['name'] ?>
                     </td>
+                    
                     <td>
                         <?php echo $eleve['ecole'] ?>
                     </td>
